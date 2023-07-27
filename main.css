@@ -1,0 +1,93 @@
+.bg-grey-custom {
+  background-color: #333333;
+}
+
+.logo-color-custom {
+  color: #999999;
+}
+
+.nav-link.active {
+  border-left: 2px solid #f6f6f6;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* //////////// HOME ////////////// */
+.carousel-item img {
+  height: 70vh;
+  object-fit: cover;
+  object-position: top;
+}
+
+.carousel-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-end {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  bottom: auto;
+  transform: translateY(-50%);
+}
+
+.section-bg {
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.section-3 {
+  background-image: url('./Images/lights.jpg');
+}
+
+.section-5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./Images/media.jpg');
+}
+
+.btn-play {
+  border: none;
+}
+
+.custom-modal-btn {
+  padding: 0;
+  border: 0;
+}
+
+/* //////////// ABOUT ////////////// */
+
+.bg-hero {
+  min-height: 60vh;
+}
+
+.bg-about {
+  background-image: url('./Images/image1.jpg');
+}
+
+.img-absolute {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+}
+
+.custom-bg-red {
+  background-color: red;
+}
+
+/* //////////// SERVICES ////////////// */
+
+.list-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
