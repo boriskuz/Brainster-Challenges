@@ -1,0 +1,31 @@
+.section-container {
+  background-image: url(./images/img.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+#textField {
+  margin-top: 10rem;
+}
+
+.btn {
+  font-size: 25px !important;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.btn:hover {
+  background-color: #000 !important;
+}
+
+.keyboard-container {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 30px 0 100px;
+}
+
+@media (max-width: 1440px) {
+  .btn {
+    font-size: 15px !important;
+  }
+}
