@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+body {
+  background-color: #638caa;
+  font-size: 1.6rem;
+  margin: 0;
+  color: #fff;
+}
+
+figure {
+  margin: 0;
+}
+
+.clear-fix::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+/* ///////////////// HEADER ///////////////// */
+
+nav {
+  padding: 1rem 20rem;
+}
+
+.apple-logo {
+  width: 3rem;
+  display: inline-block;
+}
+
+.apple-logo img {
+  display: block;
+  width: 100%;
+}
+
+.nav-links {
+  float: right;
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-links a:hover {
+  color: #b3b0a0;
+  border-bottom: 2px solid #ff000a;
+}
+
+.apple-devices {
+  margin: 3rem auto;
+  max-width: 70rem;
+}
+
+.apple-devices img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ///////////////// ICONS ///////////////// */
+
+.icon {
+  width: 25%;
+  float: left;
+  padding: 1.5rem 0 3rem;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.icon i {
+  display: block;
+  font-size: 6rem;
+  margin-bottom: 1rem;
+}
+
+.mac-book {
+  background-color: #dbdbdb;
+}
+
+.ipad {
+  background-color: #bcb9aa;
+}
+
+.iphone {
+  background-color: #9ce0d1;
+}
+
+.about {
+  background-color: #9aa7b8;
+}
+
+/* ///////////////// DEVICES DESCRIPTION ///////////////// */
+
+.float-elements {
+  /* height: 32.5rem; */
+  float: left;
+  width: 50%;
+  text-align: justify;
+  font-size: 1.8rem;
+}
+
+.device-image {
+  background-color: #b7ced6;
+  text-align: center;
+}
+
+.device-image img {
+  width: 25%;
+  padding: 4rem 0;
+}
+
+.float-elements h2 {
+  text-align: center;
+  font-weight: bold;
+  margin: 4rem 0 2rem;
+}
+
+.float-elements p {
+  text-indent: 2rem;
+  padding: 5.452rem;
+}
+
+.ipad-bg {
+  background-color: #9aa7b8;
+}
+
+.iphone-bg {
+  background-color: #bcb9aa;
+}
+
+.macbook-bg {
+  background-color: #f09e84;
+}
+
+/* ///////////////// INFO ///////////////// */
+
+.float-info {
+  width: 33.3333333%;
+  float: left;
+  text-align: center;
+  padding: 1.5rem 0 3rem;
+}
+
+.float-info h3 {
+  color: #000;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.team {
+  background-color: #9aa7b8;
+}
+
+.sallary {
+  background-color: #bcb9aa;
+}
+
+.earnings {
+  background-color: #9ce0d1;
+}
+
+/* ///////////////// FOOTER ///////////////// */
+
+.social {
+  padding: 4rem 0;
+}
+
+.social ul {
+  list-style: none;
+  text-align: center;
+}
+
+.social li {
+  display: inline-block;
+  margin-right: 15rem;
+}
+
+.social a {
+  color: #fff;
+  font-size: 2.3rem;
+}
+
+.fa-facebook-f:hover {
+  color: #3b5998;
+}
+
+.fa-google-plus:hover {
+  color: #db4a39;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.fa-youtube:hover {
+  color: #ff0000;
+}
+
+.fa-instagram:hover {
+  color: #c13584;
+}
+
+footer p {
+  background-color: #514354;
+  margin: 0;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* ///////////////// DOKOLKU WINDOWS-OT IMA ZOOM OD 125% NA LAPTOP ///////////////// */
+
+@media (-webkit-device-pixel-ratio: 1.25) {
+  html {
+    font-size: 8px;
+  }
+}
