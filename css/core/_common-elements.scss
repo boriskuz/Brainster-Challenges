@@ -1,0 +1,56 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mix;
+@use 'sass:math';
+
+body {
+  font-family: var.$font-family-base;
+  font-size: var.$font-size-base;
+  font-weight: var.$font-weight-base;
+  line-height: var.$line-height-base;
+  color: var.$text-color-base;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: math.div(var.$gutter-base, 2);
+  line-height: var.$line-height-small;
+}
+
+h1 {
+  color: var.$text-color-secondary;
+  font-size: var.$heading-size-bigger;
+
+  @include mix.mobile-l-styles {
+    font-size: var.$heading-size-big;
+  }
+}
+
+h2 {
+  font-size: var.$heading-size-big;
+
+  @include mix.mobile-l-styles {
+    font-size: var.$heading-size-small;
+  }
+}
+
+h3 {
+  font-size: var.$heading-size-tiny;
+}
+
+.btn {
+  color: var.$text-color-secondary;
+  background-color: var.$background-color-tertiary;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: math.div(var.$gutter-base, 2) math.div(var.$gutter-base, 1.2);
+  font-size: var.$font-size-small;
+  font-weight: var.$font-weight-bold;
+  border: none;
+  border-radius: var.$border-radius-small;
+  display: inline-block;
+
+  &:hover {
+    @extend %lighten;
+  }
+}

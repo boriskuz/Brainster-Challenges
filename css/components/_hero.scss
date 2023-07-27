@@ -1,0 +1,26 @@
+@use '../abstracts/mixins' as mix;
+@use '../abstracts/variables' as var;
+@use 'sass:math';
+
+.hero {
+  @extend %section;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/hero.jpg');
+  opacity: 0.8;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+
+  .wrapper {
+    @extend %wrap;
+
+    p {
+      color: var.$text-color-secondary;
+      font-size: var.$font-size-medium;
+    }
+  }
+}
