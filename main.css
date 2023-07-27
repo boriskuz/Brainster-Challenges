@@ -1,0 +1,39 @@
+body {
+  margin-top: 56px;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/home.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: calc(100vh - 56px);
+}
+
+.custom-bg-light-grey {
+  background-color: #343a40;
+}
+
+.custom-bg-violet {
+  background-color: #4900d5;
+}
+
+.custom-bg-dark-grey {
+  background-color: #393939;
+}
+
+.custom-color-red {
+  color: #ef1320;
+}
+
+.bi-check-lg {
+  font-size: 20px;
+}
+
+.bi-check-square-fill {
+  font-size: 30px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  border: 2px solid #977229;
+}
