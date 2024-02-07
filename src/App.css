@@ -1,0 +1,56 @@
+h2 {
+  font-weight: bold;
+}
+
+.section {
+  border-bottom: 2px solid #f7f7f7;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.color-orange-cs {
+  color: #ff6347 !important;
+}
+
+.bg-orange-cs {
+  background-color: #ff6347 !important;
+}
+
+.heart-icon {
+  font-size: 28px;
+}
+
+.card {
+  height: 100%;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card-image {
+  height: 200px;
+  position: relative;
+}
+
+.card-detail-image {
+  height: 600px;
+}
+
+.card-image img,
+.card-detail-image img {
+  object-fit: cover;
+}
+
+.card-heart {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
