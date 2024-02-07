@@ -1,0 +1,153 @@
+body {
+  background-color: #e7e7e7;
+}
+
+.main-container {
+  background-color: #fff;
+}
+
+/*//////////// HEADER ////////////*/
+.navbar {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.navbar-brand {
+  height: 80px;
+}
+
+.navbar-brand img {
+  height: 100%;
+}
+
+.v-align {
+  padding-top: 20px;
+}
+
+.nav-links li:hover {
+  background-color: #e7e7e7;
+}
+
+.nav-links li:hover a,
+.nav-icons li:hover a {
+  color: orange !important;
+}
+
+.nav-icons i {
+  font-size: 20px;
+}
+
+header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.header-title {
+  font-size: 50px;
+}
+
+main {
+  margin-top: 30px;
+}
+
+/*/////////////// SIDEBAR ///////////////*/
+
+.filter .list-group-item {
+  border: none;
+  border-radius: 0px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.filter .list-group-item:hover {
+  color: orange;
+}
+
+.filter .list-group-item:hover .badge {
+  color: orange;
+}
+
+.filter .list-group-item:last-child {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.filter .list-group-item:hover {
+  background-color: transparent;
+}
+
+.filter .list-group-item.active {
+  background-color: #fff;
+  color: orange;
+  font-weight: 900;
+}
+
+.badge {
+  background-color: #d3d3d3;
+  color: #5c5c5c;
+  font-weight: 900;
+}
+
+.filter .list-group-item.active .badge {
+  background-color: orange;
+  color: #5c5c5c;
+}
+
+/*/////////////// CARDS ///////////////*/
+
+.card {
+  height: 100%;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card-body {
+  transition: all 0.3s ease-in;
+}
+
+.card:hover .card-body {
+  transform: scale(1.1);
+}
+
+.card-footer {
+  background-color: orange;
+}
+
+/*/////////////// FOOTER ///////////////*/
+
+.footer {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+  margin-top: 30px;
+}
+
+.footer__columns {
+  border-left: 2px solid #e7e7e7;
+}
+
+.footer h4 {
+  margin-bottom: 20px;
+}
+
+.nav-pills a {
+  background-color: orange;
+  color: #fff;
+  border-radius: 0 !important;
+  margin-right: 10px;
+}
+.nav-pills li:hover a {
+  background-color: grey;
+  color: #fff;
+}
+
+.footer .list-group-item {
+  background-color: transparent;
+  padding-left: 0;
+  padding-right: 0;
+  border: none;
+}
+
+.footer .list-group-item:hover {
+  color: orange;
+  background-color: transparent;
+}
