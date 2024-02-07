@@ -1,0 +1,50 @@
+img {
+  display: block;
+  width: 100%;
+}
+
+.app-container {
+  margin: 0 auto;
+  max-width: 430px;
+  background-color: #d3d3d3;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../public/images/raw/Girls-Listen-Music_0.jpg');
+  background-size: cover;
+  background-position: bottom;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.bar {
+  height: 7px;
+  background-color: #66faee;
+}
+
+.artist-item {
+  position: relative;
+}
+
+.artist-item-name {
+  margin: 0;
+  padding: 6px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #2196f3;
+  color: #fff;
+}
+
+.album-container {
+  flex-basis: 50%;
+}
+
+.album-details p {
+  margin-bottom: 5px;
+}
+
+.homepage-link {
+  color: #2196f3;
+}
