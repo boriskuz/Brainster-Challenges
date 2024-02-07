@@ -1,0 +1,187 @@
+body {
+  background-color: #e7e7e7;
+}
+
+h3,
+h4 {
+  font-weight: 900;
+}
+
+.main-container {
+  background-color: #fff;
+}
+
+/*/////////////// NAVBAR ///////////////*/
+
+.navbar-default {
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid #e7e7e7;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.navbar-brand {
+  height: 80px;
+}
+
+.navbar-brand img {
+  height: 100%;
+}
+
+.v-align {
+  padding-top: 15px;
+}
+
+.center-links {
+  padding-left: 0;
+}
+
+.nav-links li a,
+.nav-icons a {
+  font-weight: 900;
+  color: #000 !important;
+}
+
+.nav-links li:hover {
+  background-color: #e7e7e7;
+}
+
+.nav-links li:hover a,
+.nav-icons li:hover a {
+  color: orange !important;
+}
+
+.nav-icons i {
+  font-size: 20px;
+}
+
+/*/ ////////////// HEADER ///////////////*/
+
+header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.header-title {
+  font-size: 50px;
+}
+
+main {
+  margin-top: 30px;
+}
+/*/////////////// SIDEBAR ///////////////*/
+
+.filter .list-group-item {
+  border: none;
+  border-radius: 0px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.filter .list-group-item:hover {
+  color: orange;
+}
+
+.filter .list-group-item:hover .badge {
+  color: orange;
+}
+
+.filter .list-group-item:last-child {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.filter .list-group-item:hover {
+  background-color: transparent;
+}
+
+.filter .list-group-item.active {
+  background-color: #fff;
+  color: orange;
+  font-weight: 900;
+}
+
+.badge {
+  background-color: #d3d3d3;
+  color: #5c5c5c;
+  font-weight: 900;
+}
+
+.filter .list-group-item.active .badge {
+  background-color: orange;
+  color: #5c5c5c;
+}
+
+/*/ ////////////// CARDS ///////////////*/
+
+.panel:hover{
+  cursor: pointer;
+}
+
+.panel-footer {
+  background-color: orange;
+  color: #000;
+}
+
+.panel-footer h5 {
+  font-weight: 900;
+}
+
+.panel-body {
+  min-height: 210px;
+  transition: 0.5s;
+}
+
+#cardHolder {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#cardHolder .panel:hover .panel-body {
+  transform: scale(1.1);
+}
+#cardHolder .panel:hover {
+  border: 2px solid orange;
+}
+
+/*/////////////// FOOTER ///////////////*/
+
+.footer {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+  margin-top: 30px;
+}
+
+.footer__columns {
+  border-left: 2px solid #e7e7e7;
+}
+
+.footer h4 {
+  margin-bottom: 20px;
+}
+
+.nav-pills a {
+  background-color: orange;
+  color: #fff;
+  border-radius: 0 !important;
+  margin-right: 10px;
+}
+.nav-pills li:hover a {
+  background-color: grey;
+}
+
+.footer .list-group-item {
+  background-color: transparent;
+  padding-left: 0;
+  padding-right: 0;
+  border: none;
+}
+
+.footer .list-group-item:hover {
+  color: orange;
+  background-color: transparent;
+}
+
+/*use color:orange for the orange color*/
+/*use background-color: #d3d3d3; color: #5c5c5c; for the badges*/
+/*use color:grey for the social-share icons on hover*/

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bikes</title>
+    <meta name="keywords" content="html,css,javaScript" />
+    <meta name="description" content="Bikes" />
+    <meta name="author" content="" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- Latest compiled and minified BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- Font-awesome 5 cdn -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- start here -->
+    <div class="container main-container">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Brand" class="img-responsive" /></a>
+          </div>
+          <div class="collapse navbar-collapse v-align" id="bs-example-navbar-collapse-1">
+            <div class="col-sm-9 col-sm-offset-1 center-links">
+              <ul class="nav navbar-nav nav-links">
+                <li><a class="text-uppercase" href="#">Home </a></li>
+                <li><a class="text-uppercase" href="#">Bikes</a></li>
+                <li><a class="text-uppercase" href="#">Gear</a></li>
+                <li><a class="text-uppercase" href="#">Parts</a></li>
+                <li><a class="text-uppercase" href="#">Tires</a></li>
+                <li><a class="text-uppercase" href="#">Service-Info</a></li>
+                <li><a class="text-uppercase" href="#">Catalogues</a></li>
+                <li><a class="text-uppercase" href="#">Contact</a></li>
+              </ul>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right nav-icons">
+              <li>
+                <a href="#"><i class="fas fa-search"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-shopping-bag"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="row">
+        <div class="col-sm-12">
+          <header>
+            <h1 class="header-title">Bikes</h1>
+          </header>
+        </div>
+      </div>
+      <main>
+        <div class="row">
+          <div class="col-sm-3 filter">
+            <h3>Filter by:</h3>
+            <div id="showAll" class="list-group"></div>
+            <h4>Gender</h4>
+            <div id="bikesByGender" class="list-group"></div>
+            <h4>Brand</h4>
+            <div id="bikesBrands" class="list-group"></div>
+          </div>
+          <div class="col-sm-9">
+            <div id="cardHolder" class="row"></div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="row footer">
+          <div class="col-sm-3">
+            <h4>Social share</h4>
+            <ul class="nav nav-pills">
+              <li role="presentation">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li role="presentation">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li role="presentation">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li role="presentation">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-3 footer__columns">
+            <h4>Event Info</h4>
+            <div class="list-group">
+              <a href="#" class="list-group-item">Enter Now</a>
+              <a href="#" class="list-group-item">Event Info</a>
+              <a href="#" class="list-group-item">Course Maps</a>
+              <a href="#" class="list-group-item">Race Pack</a>
+              <a href="#" class="list-group-item">Results</a>
+              <a href="#" class="list-group-item">FAQs</a>
+              <a href="#" class="list-group-item">Am I Registered?</a>
+            </div>
+          </div>
+          <div class="col-sm-3 footer__columns">
+            <h4>Registration</h4>
+            <div class="list-group">
+              <a href="#" class="list-group-item">Volunteers</a>
+              <a href="#" class="list-group-item">Gallery</a>
+              <a href="#" class="list-group-item">Press</a>
+              <a href="#" class="list-group-item">Results</a>
+              <a href="#" class="list-group-item">Privacy Policy</a>
+              <a href="#" class="list-group-item">Service Plus</a>
+              <a href="#" class="list-group-item">Contacts</a>
+            </div>
+          </div>
+          <div class="col-sm-3 footer__columns">
+            <h4>Schedule</h4>
+            <div class="list-group">
+              <a href="#" class="list-group-item">Gallery</a>
+              <a href="#" class="list-group-item">About</a>
+              <a href="#" class="list-group-item">Videos</a>
+              <a href="#" class="list-group-item">Results</a>
+              <a href="#" class="list-group-item">FAQs</a>
+              <a href="#" class="list-group-item">Results</a>
+              <a href="#" class="list-group-item">Volunteers</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
