@@ -1,0 +1,45 @@
+@use '../../css/abstracts/mixins' as mix;
+@use '../../css/abstracts/variables' as var;
+@use 'sass:math';
+
+.banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url('https://picsum.photos/id/116/1920/1000');
+  background-size: cover;
+  background-position: center;
+
+  .content-box {
+    @extend %section;
+    @extend %wrap;
+    color: var.$text-color-primary;
+
+    h1 {
+      margin-bottom: (var.$gutter-base);
+    }
+
+    p,
+    .btn {
+      text-transform: uppercase;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      background-color: var.$background-color-base;
+      color: var.$text-color-base;
+      padding-top: math.div(var.$gutter-base, 3);
+      padding-bottom: math.div(var.$gutter-base, 3);
+      padding-left: var.$gutter-base;
+      padding-right: var.$gutter-base;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .btn {
+    text-align: center;
+    width: 100%;
+  }
+}

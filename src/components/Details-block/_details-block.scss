@@ -1,0 +1,52 @@
+@use '../../css/abstracts/mixins' as mix;
+@use '../../css/abstracts/variables' as var;
+@use 'sass:math';
+
+.details-container {
+  .content-box {
+    @extend %section;
+    @extend %wrap;
+    display: flex;
+    align-items: center;
+
+    .text-box {
+      flex: 1;
+
+      .about {
+        text-transform: uppercase;
+        color: var.$text-color-secondary;
+      }
+    }
+
+    .image {
+      height: 400px;
+      width: 400px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-left: var.$gutter-base;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .image {
+    height: 270px !important;
+    width: 270px !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .content-box {
+    flex-direction: column;
+
+    .image {
+      margin-left: 0 !important;
+    }
+  }
+}

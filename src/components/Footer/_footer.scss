@@ -1,0 +1,25 @@
+@use '../../css/abstracts/mixins' as mix;
+@use '../../css/abstracts/variables' as var;
+@use 'sass:math';
+
+.footer {
+  background-color: var.$background-color-secondary;
+
+  &__list {
+    @extend %section;
+    @extend %wrap;
+    margin-bottom: 0;
+    text-align: center;
+    list-style: none;
+
+    a {
+      text-transform: uppercase;
+      color: var.$text-color-secondary;
+      text-decoration: none;
+    }
+
+    li:not(:last-child) {
+      margin-bottom: math.div(var.$gutter-base, 2);
+    }
+  }
+}

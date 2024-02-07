@@ -1,0 +1,39 @@
+@use '../../css/abstracts/mixins' as mix;
+@use '../../css/abstracts/variables' as var;
+@use 'sass:math';
+
+.places-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.place-component {
+  position: relative;
+  flex-basis: 33.33333%;
+
+  img {
+    width: 100%;
+  }
+
+  .text-container {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var.$text-color-primary;
+  }
+}
+
+@media (max-width: 768px) {
+  .place-component {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 425px) {
+  .place-component {
+    flex-basis: 100%;
+  }
+}
